@@ -1,7 +1,7 @@
 # RGB_to_HEX
 
 Convert from HEX to RGB and vice versa.
-Test your luck and get some random colors for tour project 
+Test your luck and get some random colors for your project 
 
 ## Authors
 

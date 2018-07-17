@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    /*background: #176;*/
+}
+
+.body-default {
+    background: #176;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body.white {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.container {
+    padding: 40px 25px;
+}
+
+.converter-wrapper {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    padding: 40px;
+}
+
+form {
+    margin-bottom: 200px;
+}
+
+.menu {
+
+}
+
+.menu ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+input {
+    font-size: 35px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+}
+
+body.white input {
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000;
+    font-size: 16px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+    font-size: 16px;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+    font-size: 16px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #000;
+    font-size: 16px;
+}
+
+
+label {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+body.white label {
+    color: #fff;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #333;
+}
+
+body.white input:focus ~ label, body.white input:valid ~ label {
+    color: #fff;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #333;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+body.white .bar:before, body.white .bar:after {
+    background: #fff;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.generator-wrapper {
+    position: relative;
+    /*display: none;*/
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro-msg {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 2px;
+}
+
+.hide {
+    display: none;
+}

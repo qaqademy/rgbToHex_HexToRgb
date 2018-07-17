@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color converter</title>
+</head>
+<body class="body-default">
+<div class="container">
+    <div class="converter-wrapper" id="converter-wrapper">
+        <h2>Color Converter
+        </h2>
+        <form>
+            <div class="group">
+                <input type="text" class="js-input" id="hex" placeholder="#eb23af">
+                <span class="bar"></span>
+                <label>HEX</label>
+            </div>
+            <div class="group">
+                <input type="text" class="js-input" id="rgb" placeholder="255,255,255">
+                <span class="bar"></span>
+                <label>RGB</label>
+            </div>
+        </form>
+    </div>
+    <div class="generator-wrapper hide" id="generator-wrapper">
+        <div class="intro-msg intro-msg-js">press SPACE bar or ENTER to generate new colors</div>
+    </div>
+</div>
+<div class="menu">
+    <ul>
+        <li class="converter">color converter</li>
+        <li class="dot">•</li>
+        <li class="random">random colors</li>
+    </ul>
+</div>
+<script src="global.js"></script>
+</body>
+</html>
